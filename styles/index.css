@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  height: 80px;
+  background-color: blueviolet;
+  position: relative;
+  color: white;
+}
+
+nav .header_logo {
+  width: 20%;
+  position: absolute;
+}
+nav .header_logo h1 {
+  margin: 20px 80px;
+}
+ul {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+ul li {
+  padding: 10px;
+  margin: 20px 15px;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* main section */
+.main {
+  background: url('../images/home-bg-slider-img1.jpg');
+  height: 800px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+.hero_section {
+  text-align: center;
+  color: white;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+.content h3 {
+  letter-spacing: 3px;
+}
+.content h1 {
+  margin-top: 30px;
+  letter-spacing: 5px;
+  font-size: 48px;
+}
+.content h2 {
+  letter-spacing: 5px;
+  font-size: 35px;
+}
+.content button {
+  width: 250px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: blueviolet;
+  border: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+}
+.content button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+
+/* main content section */
+.main_content_section {
+  margin: 80px;
+  background-color: white;
+}
+
+/* overflow section */
+.row {
+  display: flex;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row .col img {
+  width: 100%;
+  border-radius: 5px;
+}
+.card {
+  width: 500px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: 40px;
+  background-color: white;
+  z-index: 20;
+  position: absolute;
+  padding: 30px;
+  box-shadow: 3px 4px 15px rgba(236, 232, 232, 0.8);
+  border-radius: 5px;
+}
+.card p {
+  font-size: 20px;
+  color: rgb(71, 72, 73);
+  padding: 10px;
+  font-weight: bold;
+}
+.row .col2 {
+  height: 30vw;
+  padding: 70px;
+}
+.row .col2 p {
+  margin-top: 50px;
+}
+.row .col2 h1 {
+  letter-spacing: 3px;
+  color: rgb(71, 72, 73);
+}
+.row .col2 button {
+  width: 250px;
+  text-transform: uppercase;
+  height: 50px;
+  margin-top: 50px;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 3px;
+  background-color: blueviolet;
+  border: 1px solid gray;
+}
+.row .col2 button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+
+/* trainer section */
+.trainer_section {
+  margin: 210px 80px;
+  text-align: center;
+  color: rgb(71, 72, 73);
+}
+.trainer_section h5 {
+  font-size: 19px;
+  color: rgba(71, 72, 73, 0.425);
+}
+.trainers_card_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+.trainers_card_section img {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+.trainer_one,
+.trainer_two,
+.trainer_three {
+  box-shadow: 3px 4px 15px rgba(236, 232, 232, 0.8);
+  margin: 5px;
+}
+.facebook {
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.trainer_one,
+.trainer_two,
+.trainer_three h1 {
+  letter-spacing: 2px;
+}
+
+/* signup section */
+.signup {
+  margin: 210px 0;
+  text-align: center;
+  color: rgb(71, 72, 73);
+  background-image: url('../images/signup.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  background-attachment: fixed;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 150px;
+  padding: 10px;
+}
+.form input {
+  width: 100%;
+  height: 60px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid rgb(190, 185, 185);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: rgb(33, 35, 36);
+  background-color: rgba(211, 211, 211, 0);
+}
+.form input::placeholder {
+  color: rgba(255, 255, 255, 0.295);
+}
+.form input:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+.signup button {
+  width: 250px;
+  height: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+}
+.signup button:hover {
+  background-color: white;
+  color: black;
+}
+/* blogs */
+.blogs {
+  margin: 0px 80px;
+  color: rgb(71, 72, 73);
+  text-align: center;
+}
+.blogs h5 {
+  font-size: 19px;
+  color: rgba(71, 72, 73, 0.425);
+}
+.blog {
+  display: flex;
+}
+.blog_card {
+  width: 50%;
+  height: auto;
+  padding: 70px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  box-shadow: 3px 4px 15px rgba(236, 232, 232, 0.8);
+}
+.blog_card h6 {
+  float: left;
+  margin-top: 20px;
+}
+
+.blog_card p {
+  text-align: justify;
+}
+
+/* prices */
+.prices {
+  margin: 80px 0px;
+  color: rgb(193, 198, 204);
+  text-align: center;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.9;
+}
+.prices h5 {
+  font-size: 19px;
+  color: rgb(193, 198, 204);
+}
+.price_card_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 80px;
+}
+.price_card {
+  height: auto;
+  border: 1px solid gray;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.price_card .price {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+}
+.price_card h6 {
+  font-size: 19px;
+}
+.price_card button {
+  width: 250px;
+  height: 50px;
+  text-transform: uppercase;
+}
+.price_card button:hover {
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.price_card:hover {
+  background-color: white;
+  color: black;
+}
+
+/* testimonial */
+.testimonial {
+  margin: 80px;
+}
+.testimonial img {
+  width: 16px;
+  height: 16px;
+}
+.testimonial_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+.testimonial_card_one,
+.testimonial_card_two {
+  box-shadow: 3px 4px 15px rgba(236, 232, 232, 0.8);
+  margin: 30px;
+  padding: 50px;
+  margin: 10px;
+  color: rgb(123, 126, 129);
+}
+
+/* footer */
+footer {
+  background-color: #26253a;
+  height: 60vh;
+}
+.footer {
+  color: rgba(159, 161, 163, 0.795);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.footer_section_one,
+.footer_section_two,
+.footer_section_three {
+  padding: 10px;
+  width: 300px;
+  margin: 20px;
+}
+.icons {
+  display: flex;
+}
+.facebook_icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.facebook_icon:hover {
+  background-color: bisque;
+}
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+  }
+}
